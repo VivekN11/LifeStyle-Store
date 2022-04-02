@@ -623,3 +623,8 @@ hr {
   width: 80%;
   margin: 0 10%;
 }
+
+.navcontainer hr {
+  margin: 10px;
+  border-top: 1px solid gray;
+}
