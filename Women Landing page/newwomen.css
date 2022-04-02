@@ -1,0 +1,350 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+#sale {
+    text-align: center;
+    background-color: #faa619;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#body {
+    margin: auto;
+    width: 92%;
+}
+
+#slider {
+    margin: auto;
+    width: 97%;
+}
+
+.carousel-inner {
+    width: 1232px;
+    margin-left: 36px;
+    height: 540px;
+    margin-left: 120px;
+
+}
+
+.carousel-control-prev{
+    margin-left: 50px; 
+}
+
+.carousel-indicators {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carouselExampleDark {
+    width: 1232px;
+
+}
+
+.container {
+    height: 580px;
+}
+
+.carousel-item>img {
+    width: 1200px;
+}
+
+.container>div {
+    margin-left: 0px;
+}
+
+.ethnic-1499 {
+    margin-top: 10px;
+    height: 400px;
+    text-align: center;
+}
+
+.carousel-control-prev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-control-next {
+    margin-right: -50px;
+}
+
+#offer {
+    background-color: #fAA619;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#offer>h6 {
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+hr {
+    border-top: 1px solid gray;
+}
+
+.comfy {
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+    margin-left: 70px;
+}
+
+#Footcategory {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#Footcategory img {
+    height: 190px;
+    width: 190px;
+}
+.smartCasual>img{
+    margin-left: 80px;
+}
+
+
+h2 {
+    margin-top: 70px;
+}
+
+#Bagcategory {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#Bagcategory img {
+    height: 190px;
+    width: 190px;
+}
+
+.toppick {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.toppick>img {
+    height: 400px;
+    width: 400px;
+
+}
+
+.shopbrand {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.shopbrand>img {
+    height: 192px;
+    width: 192px;
+
+}
+
+.price {
+    display: flex;
+}
+
+.start399 {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.price>p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.start399img {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: larger;
+    background-color: white;
+    cursor: pointer;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+.start399img>img {
+    height: 297px;
+    width: 297px;
+}
+
+.pname {
+    margin-top: -15px;
+    font-size: 82%;
+    width: 297px;
+}
+
+.fa-solid {
+    font-size: 70%;
+    color: gray;
+}
+
+.DealCorner>div{
+    width: 1235px;
+    height: 336px;
+    /* background-color: rgb(102, 102, 250); */
+    margin: auto;
+    
+}
+.DealCorner>div>div{
+    width: 1235px;
+    height: 225px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 16.5px;
+    margin-top: 25px;
+}
+.DealCorner>div>div>div>a>img{
+    width: 192px;
+    height: 192px;
+}
+
+.casuals{
+    text-align: center;
+    height: 300px;
+}
+
+.TrendingBrands>div{
+    width: 1235px;
+    height: 336px;
+    /* background-color: rgb(102, 102, 250); */
+    margin: auto;
+    
+}
+.TrendingBrands>div>div{
+    width: 1235px;
+    height: 225px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 16.5px;
+    margin-top: 25px;
+}
+.TrendingBrands>div>div>div>a>img{
+    width: 192px;
+    height: 192px;
+}
+
+.Top-Picks{
+    height: 515px;
+    /* background-color: aquamarine; */
+    
+}
+.Top-Picks>div{
+    width: 1232px;
+    /* background-color: #5c6d34; */
+    margin: auto;
+}
+.Top-Picks>div>div{
+   display: flex;
+   gap: 12px;
+   
+}
+.Top-Picks>div>div>div>a>img{
+   width: 400px;
+   height: 400px;
+   
+}
+
+.trendEthnicWear{
+    height: 525px;
+    /* background-color: aquamarine; */
+    
+}
+.trendEthnicWear>div{
+    width: 1232px;
+    /* background-color: #5c6d34; */
+    margin: auto;
+}
+.trendEthnicWear>div>div{
+   display: flex;
+   gap: 12px;
+   
+}
+.trendEthnicWear>div>div>div>a>img{
+   width: 400px;
+   height: 400px;
+   
+}
+
+
+
+/* trendsetters */
+
+.trendsetters{
+    height: 525px;
+    /* background-color: aquamarine; */
+    
+}
+.trendsetters>div{
+    width: 1232px;
+    /* background-color: #5c6d34; */
+    margin: auto;
+}
+.trendsetters>div>div{
+   display: flex;
+   gap: 12px;
+   
+}
+.trendsetters>div>div>div>a>img{
+   width: 400px;
+   height: 400px;
+   
+}
+/* trendsetters */
+
+
+
+.seeAll {
+    margin-left: 37%;
+    padding: 10px 120px;
+    border: 0.5px solid #D6DFE8;
+    color: #fAA619;
+    background-color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.seeAll:hover {
+    border: 0.5px solid #fAA619;
+}
+
+.sortbyDept {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sortbyDept>img {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 40px;
+}
