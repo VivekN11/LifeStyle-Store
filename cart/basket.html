@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket Page</title>
+    <style>
+
+
+#divHorizontal {
+  width: 90%;
+  margin: auto;
+}
+
+#basketPage {
+  width: 84%;
+  margin: auto;
+}
+
+#gto {
+  background-color: red;
+  color: white;
+  padding: 4px;
+}
+
+#gto2 {
+  color: rgb(80, 75, 75);
+}
+
+tr,
+th,
+td {
+  border: 0px solid #edeff1;
+}
+
+table {
+  width: 68%;
+  display: inline-block;
+}
+
+#boxF {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 2%;
+  margin-top: 30px;
+}
+
+#boxF > div {
+  width: 19%;
+  height: auto;
+  position: relative;
+}
+
+.price2 {
+  font-weight: 500;
+  font-size: 15px;
+  color: silver;
+  text-decoration: line-through;
+}
+
+.left {
+  border: 1px solid silver;
+  width: 30%;
+  height: 192px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+#logoPay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+#logoPay > div {
+  width: 30%;
+  margin-left: 4px;
+}
+
+#logoPay > div > img {
+  width: 80%;
+  height: 100%;
+}
+
+#headingOfBasket {
+  font-size: 25px;
+  color: #19191a;
+}
+
+#headerOfItem {
+  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #3d464d;
+  font-weight: bolder;
+}
+
+#headerOfItem th {
+  border: 0px solid silver;
+  height: 40px;
+}
+
+#displayBasket {
+  color: #3d464d;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#displayBasket img {
+  height: 160px;
+  width: 100%;
+}
+
+#sel {
+  font-size: 13px;
+  width: 80px;
+  height: 40px;
+  border: 0px solid gray;
+}
+
+#totalAmt {
+  height: 40px;
+  text-align: center;
+}
+
+#totalAmt {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #3d464d;
+  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#cnBtn {
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #faa619;
+  border: 1px solid #faa619;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#divBtn {
+  border-top: 2px solid silver;
+  width: 100%;
+  border-bottom: 2px solid silver;
+}
+
+#tableStylo {
+  width: 67%;
+  margin-left: 5px;
+}
+
+#styloTable {
+  width: 67%;
+  margin-left: 5px;
+  border: 1px solid red;
+}
+
+#calN {
+  display: flex;
+  color: grey;
+}
+
+#cale {
+  font-size: 20px;
+  margin-top: 14px;
+  padding-right: 10px;
+}
+
+.gpc {
+  display: flex;
+  font-size: 15px;
+  color: #72818d;
+  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.gpc img {
+  margin-top: 14px;
+}
+
+.helpN {
+  display: flex;
+  font-size: 15px;
+  color: #72818d;
+  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.helpN div + p {
+  line-height: 0px;
+}
+
+.helpN p {
+  margin-left: 10px;
+}
+
+.helpN i {
+  margin-top: 7px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    
+    <div id="basketPage">
+      <p id="headingOfBasket">Your Shopping Basket</p>
+      <div>
+        <table>
+          <thead>
+            <tr id="headerOfItem">
+              <th>Item</th>
+              <th>Description</th>
+              <th style="width: 70px">Price</th>
+              <th>Quantity</th>
+              <th style="width: 70px">Total Price</th>
+            </tr>
+            <tr>
+              <th>
+                <img
+                  width="50%"
+                  src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg"
+                  alt=""
+                />
+              </th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="left">
+          <div id="totalAmt"></div>
+          <div id="divBtn">
+            <button
+              id="cnBtn"
+              type="button"
+              onclick="window.location.href='checkout.html'"
+            >
+              Checkout Now
+            </button>
+          </div>
+          <div id="logoPay">
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="calN">
+            <div id="cale"><i class="far fa-calendar-alt"></i></div>
+            <p id="caleP">
+              Congrats! You can pay for this order in easy installments Learn
+              More.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gpc">
+        <div>
+          <img
+            height="20px"
+            src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png"
+            alt=""
+          />
+        </div>
+        <p>Got a Promo Code? Use it here</p>
+      </div>
+      <div class="gpc">
+        <div>
+          <img
+            height="15px"
+            src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg"
+          />
+        </div>
+        <p>Have a Gift Card? Redeem it at checkout.</p>
+      </div>
+      <p style="color: #72818d">Need help? We're here for you.</p>
+      <div class="helpN">
+        <div><i class="fas fa-phone-square"></i></div>
+        <p>Call Customer Support at 1800-123-1555</p>
+      </div>
+      <div class="helpN">
+        <div><i class="fas fa-envelope-square"></i></div>
+        <p>Write to us</p>
+      </div>
+      <div class="helpN">
+        <div><i class="fas fa-undo"></i></div>
+        <p>Returns Policy</p>
+      </div>
+      <p style="height: 16px">YOU MAY ALSO LIKE</p>
+      <div id="boxF">
+        <div>
+          <a href="#">
+            <img
+              width="100%"
+              src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008303275_01-2100.jpg"
+              alt=""
+            />
+          </a>
+          <span class="price1">&#x20b9; 8,097</span>
+          <span class="price2">&#x20b9; 13,495</span>
+          <p class="detail">
+            ARMANI EXCHANGE Men Analog Watch with Metal Strap - AX2802
+          </p>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              width="100%"
+              src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000005319712-Contrast-Grey-Charcoal-Melange-Var25-1000005319712-Var25_01-345.jpg"
+              alt=""
+            />
+          </a>
+          <span class="price1">&#x20b9; 1,597</span>
+          <span class="price2">&#x20b9; 2,995</span>
+          <p class="detail">KAPPA Solid Raglan Sleeves T-Shirt</p>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              width="100%"
+              src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000009795391-Purple-1000009795391_01-345.jpg"
+              alt=""
+            />
+          </a>
+          <span class="price1">&#x20b9; 678</span>
+          <span class="price2">&#x20b9; 799</span>
+          <p class="detail">
+            EMPORIO ARMANI Men Analog Watch with Leather Strap
+          </p>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              width="100%"
+              src="https://6c819239693cc4960b69-cc9b957bf963b53239339d3141093094.lmsin.net/1000007411907-Red-Red-1000007411907-180220_01-345.jpg"
+              alt=""
+            />
+          </a>
+          <span class="price1">&#x20b9; 899</span>
+          <span class="price2">&#x20b9; 995</span>
+          <p class="detail">ARMANI EXCHANGE Fitz Men Water-Resistant</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
+
+<script>
+    var product = JSON.parse(localStorage.getItem("cartStorageData"));
+var sum = 0;
+product.forEach(function (item) {
+  display(item.name, item.rating, item.img_url, item.MRP, item.rupeeSign);
+});
+
+function display(name, rating, image_url, MRP, rupee) {
+  sum += MRP;
+  var row = document.createElement("tr");
+  row.setAttribute("id", "displayBasket");
+  var td1 = document.createElement("td");
+  var img = document.createElement("img");
+  img.setAttribute("src", image_url);
+  td1.append(img);
+  var td2 = document.createElement("td");
+  td2.textContent = name;
+  var td3 = document.createElement("td");
+  td3.textContent = rupee + MRP;
+
+  var td4 = document.createElement("td");
+  var selectTag = document.createElement("select");
+  selectTag.setAttribute("id", "sel");
+  var option1 = document.createElement("option");
+  var option2 = document.createElement("option");
+  var option3 = document.createElement("option");
+  var option4 = document.createElement("option");
+  option1.textContent = "1";
+  option2.textContent = "2";
+  option3.textContent = "3";
+  option4.textContent = "4";
+  selectTag.append(option1, option2, option3, option4);
+  td4.append(selectTag);
+  //var n = document.getElementById("sel").value;
+
+  var td5 = document.createElement("td");
+  td5.textContent = rupee + MRP;
+
+  row.append(td1, td2, td3, td4, td5);
+  var tbody = document.querySelector("tbody");
+  tbody.append(row);
+}
+console.log(sum);
+var tag = (document.getElementById("totalAmt").innerHTML =
+  `<span>Subtotal : ₹ </span>` + sum);
+
+</script>

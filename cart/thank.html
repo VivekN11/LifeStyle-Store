@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Successful</title>
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 0.1em solid rgb(236, 237, 235);
+    width: 100%;
+    border-radius: 3%;
+}
+
+#container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+
+    box-sizing: border-box;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+button {
+    background-color: #74AE3C;
+    border: none;
+    
+    padding: 3%;
+    width: 50%;
+    color: white;
+
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+        <img src="https://c.tenor.com/0AVbKGY_MxMAAAAC/check-mark-verified.gif" alt="">
+        <h1>THANK YOU ,</h1>
+        <H4 id="orderNumber"></H4>
+        <h4>We'll email you an order confirmation with details and tracking info</h4>
+        <button id="continueShoppingBtn"><strong>Continue Shopping</strong></button>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    
+
+let orderNumber = document.getElementById('orderNumber');
+
+orderNumber.innerHTML = "Your order number is : "+Math.ceil(Math.random() * 1000000000);
+
+
+let continueShoppingBtn = document.getElementById('continueShoppingBtn');
+    continueShoppingBtn.addEventListener('click', function (){
+        window.location.href = '../pages/index.html';
+    });
+
+
+
+</script>
