@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .popup{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1.25);
+            width: 700px;
+            padding: 40px 60px;
+            background-color: white;
+            padding: 50px 80px 80px 80px;
+            transition:top 0ms ease-in-out 200ms,
+                       opacity 200ms ease-in-out 0ms,
+                       transform 200ms ease-in-out 0ms;
+        }
+        .active{
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+            transition:top 0ms ease-in-out 200ms,
+                       opacity 200ms ease-in-out 0ms,
+                       transform 200ms ease-in-out 0ms,
+
+        }
+        .close-btn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: rgb(148, 146, 146);
+            margin-bottom: 15px;
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+        input{
+            margin-top: 10px;
+            display: block;
+            width: 47%;
+            padding: 12px;
+            outline: none;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        a{
+            color: #faa619;
+        }
+        .B{
+            background-color: #faa619;
+            width: 130px;
+            height: 40px;
+            outline: none;
+            border: 1px solid #faa619;
+            color: white;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-right: 20%;
+            margin-left: 5%;
+            
+        }
+        img{
+            width: 100%;
+            height: 90%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .G{
+            display: flex;
+            justify-content: space-between;
+        }
+        #Z{
+            color: #faa619;
+        }
+        .k{
+            display: flex;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="centre">
+        <button id="show-login">Signup</button>
+    </div>
+    <img src="https://wallpapercave.com/wp/wp2578970.png"/>
+        <div class="popup">
+            <div class="close-btn">
+                &times;
+            </div>
+            <div class="form">
+                <h1>How do we address you ?</h1>
+                <div class="G">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Lastname">
+                </div>
+                <p>By creating your account you agree to our<a id="Z" href="">Terms and Conditions</a></p>
+                <hr>
+                <div class="l">
+                <button class="B" ><a href="link.html">GO BACK</a></button>
+                <button class="B"><a>CONTINUE</a></button>
+            </div>
+        </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#show-login").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+    });
+
+    document.querySelector(".close-btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+    });
+</script>
