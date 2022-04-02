@@ -285,7 +285,7 @@ body {
   margin-top: 20px;
 }
 
-hr {
+footer hr {
   background-color: #e6e6e6;
   width: 96%;
   margin: 20px 2%;
@@ -506,7 +506,4 @@ h5 {
   color: orange;
 }
 
-
-
 /* -------------------------------------------- */
-
