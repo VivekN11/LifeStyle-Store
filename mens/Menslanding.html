@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Online Shopping at Lifestyle</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/apple-touch-icon-152x152.png">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #sale {
+            text-align: center;
+            background-color: #faa619;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #body {
+            margin: auto;
+            width: 92%;
+        }
+
+        #slider {
+            margin: auto;
+            width: 97%;
+        }
+
+        .carousel-inner {
+            width: 1232px;
+            margin-left: 36px;
+            height: 540px;
+
+        }
+
+        .carousel-indicators {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carouselExampleDark {
+            width: 1232px;
+
+        }
+        
+        .carousel-item>img {
+            width: 1200px;
+        }
+
+        .container>div {
+            margin-left: 0px;
+        }
+
+        .ethnic-1499 {
+            margin-top: 10px;
+            height: 400px;
+            text-align: center;
+        }
+
+        .carousel-control-prev {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-control-next {
+            margin-right: -90px;
+        }
+
+        #offer {
+            background-color: #fAA619;
+            width: 100%;
+            height: 40px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        #offer>h6 {
+            font-size: 15px;
+            text-align: center;
+            margin: auto;
+        }
+
+        hr {
+            border-top: 1px solid gray;
+        }
+
+        .comfy {
+            align-items: center;
+            margin: 0px 0px 50px 0px;
+        }
+
+        #Footcategory {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 5px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #Footcategory img {
+            height: 190px;
+            width: 190px;
+        }
+
+        h2 {
+            margin-top: 70px;
+        }
+
+        #Bagcategory {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 5px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #Bagcategory img {
+            height: 190px;
+            width: 190px;
+        }
+
+        .toppick {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .toppick>img {
+            height: 400px;
+            width: 400px;
+
+        }
+
+        .shopbrand {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .shopbrand>img {
+            height: 192px;
+            width: 192px;
+
+        }
+
+        .price {
+            display: flex;
+        }
+
+        .start399 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .price>p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        .start399img {
+            position: relative;
+        }
+
+        .heart {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            border-radius: 50px;
+            font-size: larger;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+            color: red;
+        }
+
+        .start399img>img {
+            height: 297px;
+            width: 297px;
+        }
+
+        .pname {
+            margin-top: -15px;
+            font-size: 82%;
+            width: 297px;
+        }
+
+        .fa-solid {
+            font-size: 70%;
+            color: gray;
+        }
+
+        .seeAll {
+            margin-left: 37%;
+            padding: 10px 120px;
+            border: 0.5px solid #D6DFE8;
+            color: #fAA619;
+            background-color: white;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .seeAll:hover {
+            border: 0.5px solid #fAA619;
+        }
+
+        .sortbyDept {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .sortbyDept>img {
+            height: 200px;
+            width: 400px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="offer">
+        <h6>Get an Extra 20% off on all orders of Rs.3499 & above + Free Shipping. Use Code SALE20
+            <i class="fa-solid fa-angle-right"></i>
+        </h6>
+    </div>
+
+    <div id="slider">
+        <div id="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Men_Desktop-1-01April2022.gif"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https:/70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-4-31March2022.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https:/70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-2-31March2022.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https:/70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-3-01April2022.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item " data-bs-interval="2000">                      
+                      <img src="https://lmsin.net/cdn-cgi/image/w=500,q=40,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-mobile-MEN-01April2022.jpg"
+
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="body">
+        <h2 class="cathead"></h2>
+        <div class="comfy">
+            <img
+                src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-8modblock-oneBythree-D-29March2022.gif" />
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">Deal Corner</h2>
+
+        <div class="shopbrand">
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner1-17March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner2-17March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner3-17March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner4-17March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner5-17March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner6-17March2022.jpg" />
+
+        </div>
+
+
+        <hr>
+
+            <h2 class="cathead"></h2>
+            <div class="comfy">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-12modblock-oneBythree-A-StripBanner1-01April2022.jpg" />
+            </div>
+    
+            <hr>
+
+        <div>
+            <h2 class="cathead">Shop By Category</h2>
+            <div id="Footcategory">
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">Top Trending Brands</h2>
+
+        <div class="shopbrand">
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner1-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner2-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner3-23March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner4-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner5-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner6-04March2022.jpg" />
+           
+
+        </div>
+
+
+        <hr>
+
+
+        <h2 class="cathead"></h2>
+            <div class="comfy">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-9modblock-StripBanner2-D-16March2022.gif" />
+            </div>
+    
+            <hr>
+
+
+            <h2 class="cathead">New Arrivals From Brands</h2>
+
+        <div class="shopbrand">
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner1-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner2-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner3-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner4-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner5-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-04March2022.jpg" />
+           
+
+        </div>
+
+
+        <hr>
+
+        <h2 class="cathead">Top Picks</h2>
+
+        <div class="toppick">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-1-oneBythree-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-2-oneBythree-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-3-oneBythree-23March2022A.jpg" />
+           
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">Most Loved Styles</h2>
+
+        <div class="toppick">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-1-oneBythreeA-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-2-oneBythreeA-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-3-oneBythreeA-04March2022.jpg" />
+           
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">New, Cool & Trendy</h2>
+
+        <div class="toppick">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-A-Men-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-B-Men-04March2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-C-Men-11March2022.jpg" />
+           
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">Highlight Of The Day</h2>
+
+        <div class="toppick">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-1-oneBythree-06Mar2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-2-oneBythree-06Mar2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-3-oneBythree-30Mar2022.jpg" />
+           
+        </div>
+
+        <hr>
+
+
+        <h2 class="cathead">Flash Sale For The Day</h2>
+            <div class="comfy">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-modularblock7-oneBythree-A-Men-11March2022.jpg" />
+            </div>
+    
+            <hr>
+
+
+            <h2 class="cathead">Trending Now</h2>
+
+        <div class="start399">
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009813654-Var8-Black-Black-1000009813654-Var8_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>849</p>
+                </div>
+                <div class="pname">
+                    <p>KAPPA Men Solid Elasticated Track Pants                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000005621959-Kira-Rib-Grey-Grey-Melange-1000005621959_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>849</p>
+                </div>
+                <div class="pname">
+                    <p>KAPPA Men Solid Elasticated Track Pants
+                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010882590-Green-Green-1000010882590_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>1195</p>
+                </div>
+                <div class="pname">
+                    <p>KAPPA Men Solid Elasticated Track Pants
+                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007642445-Black-GREYBLACK-1000007642445_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>679</p>
+                </div>
+                <div class="pname">
+                    <p>KAPPA Men Solid Elasticated Track Pants
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="seeAll">SEE ALL</button>
+        <hr>
+
+
+
+        <h2 class="cathead">Unmisable Deal</h2>
+
+        <div class="toppick1">
+            <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1C-Men-06Mar2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1D-Men-06Mar2022.jpg" />           
+        </div>
+
+        <hr>
+
+
+        <h2 class="cathead">Essentials For You</h2>
+
+        <div class="toppick1">
+            <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-A-Men-06Mar2022.jpg" />
+            <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-B-Men-06Mar2022.jpg" />           
+        </div>
+
+        <hr>
+
+        <h2 class="cathead">Trending Now</h2>
+
+        <div class="start399">
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007867136_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>13195</p>
+                </div>
+                <div class="pname">
+                    <p>KENNETH COLE Men Chronograph Watch- KC51024001MN
+                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008414813_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>10495</p>
+                </div>
+                <div class="pname">
+                    <p>KENNETH COLE Men Chronograph Watch- KC51024001MN
+
+                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008784936_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>16925</p>
+                </div>
+                <div class="pname">
+                    <p>KENNETH COLE Men Chronograph Watch- KC51024001MN
+
+                    </p>
+                </div>
+            </div>
+            <div class="start399img">
+                <img
+                    src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008978536_01-2100.jpg" />
+                <a href="#">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+
+                <div class="price">
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>22396</p>
+                </div>
+                <div class="pname">
+                    <p>KENNETH COLE Men Chronograph Watch- KC51024001MN
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="seeAll">SEE ALL</button>
+        <hr>
+
+
+        <h2 class="cathead">Shop By Department</h2>
+
+        <div class="sortbyDept">
+            <img
+                src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Shoe-6modularblock-oneBythree-A-Shoe-04March2022A.jpg" />
+            <img
+                src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Shoe-6modularblock-oneBythree-B-Shoe-04March2022A.jpg" />
+            <img
+                src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Shoe-6modularblock-oneBythree-C-Shoe-04March2022A.jpg" />
+        </div>
+
+        <hr>
+        
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<script>
+    
+var shopByCatFoot = [
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-1-Desktop-Men-05Mar2022.jpg",
+        name: "T-Shirts"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-2-Desktop-Men-05Mar2022.jpg",
+        name: "Casual Shirts"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-3-Desktop-Men-05Mar2022.jpg",
+        name: "Trackpants"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-4-Desktop-Men-05Mar2022.jpg",
+        name: "Jeans"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-5-Desktop-Men-05Mar2022.jpg",
+        name: "Watches"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-6-Desktop-Men-05Mar2022.jpg",
+        name: "Shorts"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-7-Desktop-Men-05Mar2022.jpg",
+        name: "Shoes"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-8-Desktop-Men-05Mar2022.jpg",
+        name: "Casual Trousers"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-9-Desktop-Men-16Mar2022.jpg",
+        name: "Formal Shirts"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-05Mar2022.jpg",
+        name: "Innerwear"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-11-Desktop-Men-05Mar2022.jpg",
+        name: "Sportswear"
+    },
+    {
+        img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-12-Desktop-Men-05Mar2022.jpg",
+        name: "Ethnicwear"
+    }
+  
+]
+
+shopByCatFoot.map(function (ele) {
+    var box = document.createElement("div");
+
+    var image = document.createElement("img");
+    image.src = ele.img;
+    image.setAttribute = ("class", "catimg")
+
+    var name1 = document.createElement("h5");
+    name1.innerText = ele.name;
+    console.log(ele.name)
+
+
+    box.append(image, name1)
+
+    document.querySelector("#Footcategory").append(box)
+})
+</script>
