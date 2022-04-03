@@ -296,7 +296,6 @@ footer hr {
 /* subscribe */
 #SD h2 {
   font-size: 22px;
-  /* margin-bottom: -10px; */
 }
 
 #SD p {
@@ -381,10 +380,6 @@ footer hr {
   line-height: 60%;
   padding-left: 10px;
 }
-
-#tags h5 {
-  margin-bottom: 20px;
-}
 /* Tags end */
 
 /* contactUS */
@@ -466,48 +461,314 @@ h5 {
 /* Copyright end */
 
 /* footer end */
+/* -------------------------------------------- */
 
 /* Container */
 
-#container {
-  height: 400px;
-  width: 80%;
-  margin: auto;
-}
-
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: auto;
+#sale {
   text-align: center;
+  background-color: #faa619;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.main-content > div {
-  height: 400px;
-  position: relative;
-  text-align: center;
+#body {
+  margin: auto;
+  width: 92%;
 }
 
-#container img {
-  max-height: 100%;
+#slider {
+  z-index: 0;
   width: 100%;
 }
 
-#container button {
-  padding: 15px;
-  border: none;
-  width: 80%;
-  background-color: #fff;
+.carousel-inner {
+  width: 90%;
+  margin-left: 36px;
+  height: 540px;
+}
+
+.carousel-indicators {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carouselExampleDark {
+  width: 100%;
+}
+
+.container {
+  height: 580px;
+}
+
+.carousel-item > img {
+  width: 100%;
+}
+
+.container > div {
+  margin-left: 0px;
+}
+
+.ethnic-1499 {
+  margin-top: 10px;
+  height: 400px;
+  text-align: center;
+}
+
+.carousel-control-prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-control-next {
+  margin-right: -90px;
+}
+
+#offer {
+  background-color: #faa619;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#offer > h6 {
+  font-size: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+hr {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  border-top: 1px solid gray;
+}
+
+.comfy {
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.comfy img {
+  width: 100%;
+}
+
+#Footcategory {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+}
+
+#Footcategory img {
+  width: 100%;
+}
+.smartCasual > img {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 70px;
+}
+
+#Bagcategory {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#Bagcategory img {
+  max-width: 100%;
+}
+
+.toppick {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.toppick > img {
+  width: 100%;
+}
+
+.shopbrand {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.shopbrand > img {
+  height: 192px;
+  width: 192px;
+}
+
+.price {
+  display: flex;
+}
+
+.start399 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.price > p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.start399img {
+  position: relative;
+}
+
+.heart {
   position: absolute;
-  top: 70%;
-  left: 10%;
-  border-radius: px;
+  top: 10px;
+  right: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: larger;
+  background-color: white;
+  cursor: pointer;
 }
 
-#container a {
-  text-decoration: none;
-  font-size: 18px;
-  color: orange;
+.heart:hover {
+  transform: scale(1.2);
+  color: red;
 }
 
-/* -------------------------------------------- */
+.start399img > img {
+  width: 100%;
+}
+
+.pname {
+  margin-top: -15px;
+  font-size: 82%;
+  width: 297px;
+}
+
+.fa-solid {
+  font-size: 70%;
+  color: gray;
+}
+
+.DealCorner > div {
+  width: 100%;
+  /* background-color: rgb(102, 102, 250); */
+  margin-bottom: 40px;
+}
+.DealCorner > div > div {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  gap: 16.5px;
+  margin-top: 25px;
+}
+.DealCorner > div > div > div > a > img {
+  width: 100%;
+}
+
+.casuals {
+  text-align: center;
+  /* height: 300px; */
+}
+
+.casuals img {
+  width: 100%;
+}
+
+.TrendingBrands > div {
+  width: 100%;
+}
+.TrendingBrands > div > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.TrendingBrands > div > div > div > a > img {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.Top-Picks > div {
+  width: 100%;
+}
+.Top-Picks > div > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.Top-Picks > div > div > div > a > img {
+  width: 100%;
+}
+
+.trendEthnicWear > div {
+  width: 100%;
+}
+.trendEthnicWear > div > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.trendEthnicWear > div > div > div > a > img {
+  width: 100%;
+}
+
+/* trendsetters */
+
+.trendsetters > div {
+  width: 100%;
+}
+.trendsetters > div > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.trendsetters > div > div > div > a > img {
+  width: 100%;
+}
+/* trendsetters */
+
+.seeAll {
+  margin-left: 37%;
+  padding: 10px 120px;
+  border: 0.5px solid #d6dfe8;
+  color: #faa619;
+  background-color: white;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.seeAll:hover {
+  border: 0.5px solid #faa619;
+}
+
+.sortbyDept {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.sortbyDept > img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.toppick1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.toppick1 > img {
+  width: 100%;
+}

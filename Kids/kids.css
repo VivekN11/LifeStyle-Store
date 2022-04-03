@@ -463,18 +463,6 @@ h5 {
 
 /* Container */
 
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: auto;
-  text-align: center;
-}
-
-.main-content > div {
-  height: 400px;
-  position: relative;
-  text-align: center;
-}
 
 /* -------------------------------------------- */
 

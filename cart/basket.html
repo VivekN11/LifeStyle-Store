@@ -6,215 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basket Page</title>
     <style>
+      #divHorizontal {
+        width: 90%;
+        margin: auto;
+      }
 
+      #basketPage {
+        width: 84%;
+        margin: auto;
+      }
 
-#divHorizontal {
-  width: 90%;
-  margin: auto;
-}
+      #gto {
+        background-color: red;
+        color: white;
+        padding: 4px;
+      }
 
-#basketPage {
-  width: 84%;
-  margin: auto;
-}
+      #gto2 {
+        color: rgb(80, 75, 75);
+      }
 
-#gto {
-  background-color: red;
-  color: white;
-  padding: 4px;
-}
+      tr,
+      th,
+      td {
+        border: 0px solid #edeff1;
+      }
 
-#gto2 {
-  color: rgb(80, 75, 75);
-}
+      table {
+        width: 68%;
+        display: inline-block;
+        text-align: center;
+      }
 
-tr,
-th,
-td {
-  border: 0px solid #edeff1;
-}
+      #boxF {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: row;
+        gap: 2%;
+        margin-top: 30px;
+      }
 
-table {
-  width: 68%;
-  display: inline-block;
-}
+      #boxF > div {
+        width: 19%;
+        height: auto;
+        position: relative;
+      }
 
-#boxF {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: row;
-  gap: 2%;
-  margin-top: 30px;
-}
+      .price2 {
+        font-weight: 500;
+        font-size: 15px;
+        color: silver;
+        text-decoration: line-through;
+      }
 
-#boxF > div {
-  width: 19%;
-  height: auto;
-  position: relative;
-}
+      .left {
+        /* border: 1px solid silver; */
+        width: 30%;
+        height: 192px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+      }
 
-.price2 {
-  font-weight: 500;
-  font-size: 15px;
-  color: silver;
-  text-decoration: line-through;
-}
+      #logoPay {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
+      }
 
-.left {
-  border: 1px solid silver;
-  width: 30%;
-  height: 192px;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
-}
+      #logoPay > div {
+        width: 30%;
+        margin-left: 4px;
+      }
 
-#logoPay {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2%;
-}
+      #logoPay > div > img {
+        width: 80%;
+        height: 100%;
+      }
 
-#logoPay > div {
-  width: 30%;
-  margin-left: 4px;
-}
+      #headingOfBasket {
+        font-size: 25px;
+        color: #19191a;
+      }
 
-#logoPay > div > img {
-  width: 80%;
-  height: 100%;
-}
+      #headerOfItem {
+        font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 13px;
+        color: #3d464d;
+        font-weight: bolder;
+      }
 
-#headingOfBasket {
-  font-size: 25px;
-  color: #19191a;
-}
+      #headerOfItem th {
+        border: 0px solid silver;
+        height: 40px;
+      }
 
-#headerOfItem {
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #3d464d;
-  font-weight: bolder;
-}
+      #displayBasket {
+        color: #3d464d;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
 
-#headerOfItem th {
-  border: 0px solid silver;
-  height: 40px;
-}
+      #displayBasket img {
+        height: 160px;
+        width: 100%;
+      }
 
-#displayBasket {
-  color: #3d464d;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
+      #sel {
+        font-size: 13px;
+        width: 80px;
+        height: 40px;
+        border: 0px solid gray;
+      }
 
-#displayBasket img {
-  height: 160px;
-  width: 100%;
-}
+      #totalAmt {
+        height: 40px;
+        text-align: center;
+      }
 
-#sel {
-  font-size: 13px;
-  width: 80px;
-  height: 40px;
-  border: 0px solid gray;
-}
+      #totalAmt {
+        margin-top: 8px;
+        font-size: 18px;
+        color: #3d464d;
+        font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-weight: bolder;
+      }
 
-#totalAmt {
-  height: 40px;
-  text-align: center;
-}
+      p {
+        font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
 
-#totalAmt {
-  margin-top: 8px;
-  font-size: 18px;
-  color: #3d464d;
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bolder;
-}
+      #cnBtn {
+        width: 90%;
+        height: 40px;
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #faa619;
+        border: 1px solid #faa619;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
 
-p {
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+      #divBtn {
+        /* border-top: 2px solid silver; */
+        width: 100%;
+        /* border-bottom: 2px solid silver; */
+      }
 
-#cnBtn {
-  width: 90%;
-  height: 40px;
-  margin-left: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #faa619;
-  border: 1px solid #faa619;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+      #tableStylo {
+        width: 67%;
+        margin-left: 5px;
+      }
 
-#divBtn {
-  border-top: 2px solid silver;
-  width: 100%;
-  border-bottom: 2px solid silver;
-}
+      #styloTable {
+        width: 67%;
+        margin-left: 5px;
+        border: 1px solid red;
+      }
 
-#tableStylo {
-  width: 67%;
-  margin-left: 5px;
-}
+      #calN {
+        display: flex;
+        color: grey;
+      }
 
-#styloTable {
-  width: 67%;
-  margin-left: 5px;
-  border: 1px solid red;
-}
+      #cale {
+        font-size: 20px;
+        margin-top: 14px;
+        padding-right: 10px;
+      }
 
-#calN {
-  display: flex;
-  color: grey;
-}
+      .gpc {
+        display: flex;
+        font-size: 15px;
+        color: #72818d;
+        font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
 
-#cale {
-  font-size: 20px;
-  margin-top: 14px;
-  padding-right: 10px;
-}
+      .gpc img {
+        margin-top: 14px;
+      }
 
-.gpc {
-  display: flex;
-  font-size: 15px;
-  color: #72818d;
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+      .helpN {
+        display: flex;
+        font-size: 15px;
+        color: #72818d;
+        font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
 
-.gpc img {
-  margin-top: 14px;
-}
+      .helpN div + p {
+        line-height: 0px;
+      }
 
-.helpN {
-  display: flex;
-  font-size: 15px;
-  color: #72818d;
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+      .helpN p {
+        margin-left: 10px;
+      }
 
-.helpN div + p {
-  line-height: 0px;
-}
-
-.helpN p {
-  margin-left: 10px;
-}
-
-.helpN i {
-  margin-top: 7px;
-}
-
+      .helpN i {
+        margin-top: 7px;
+      }
     </style>
   </head>
 
   <body>
-    
     <div id="basketPage">
       <p id="headingOfBasket">Your Shopping Basket</p>
       <div>
@@ -249,7 +251,7 @@ p {
             <button
               id="cnBtn"
               type="button"
-              onclick="window.location.href='checkout.html'"
+              onclick="window.location.href='./payment.html'"
             >
               Checkout Now
             </button>
@@ -394,49 +396,91 @@ p {
 </html>
 
 <script>
-    var product = JSON.parse(localStorage.getItem("cartStorageData"));
-var sum = 0;
-product.forEach(function (item) {
-  display(item.name, item.rating, item.img_url, item.MRP, item.rupeeSign);
-});
+  var product = JSON.parse(localStorage.getItem("addtobasket"));
+  var sum = sum || 0;
+  product.forEach(function (item) {
+    display(item.name, item.image, item.price);
+  });
 
-function display(name, rating, image_url, MRP, rupee) {
-  sum += MRP;
-  var row = document.createElement("tr");
-  row.setAttribute("id", "displayBasket");
-  var td1 = document.createElement("td");
-  var img = document.createElement("img");
-  img.setAttribute("src", image_url);
-  td1.append(img);
-  var td2 = document.createElement("td");
-  td2.textContent = name;
-  var td3 = document.createElement("td");
-  td3.textContent = rupee + MRP;
+  var checkOutTotal = JSON.parse(localStorage.getItem("total")) || 0;
 
-  var td4 = document.createElement("td");
-  var selectTag = document.createElement("select");
-  selectTag.setAttribute("id", "sel");
-  var option1 = document.createElement("option");
-  var option2 = document.createElement("option");
-  var option3 = document.createElement("option");
-  var option4 = document.createElement("option");
-  option1.textContent = "1";
-  option2.textContent = "2";
-  option3.textContent = "3";
-  option4.textContent = "4";
-  selectTag.append(option1, option2, option3, option4);
-  td4.append(selectTag);
-  //var n = document.getElementById("sel").value;
+  var num = 0 || num;
+  function display(name, image_url, price) {
+    var row = document.createElement("tr");
+    row.setAttribute("id", "displayBasket");
+    var td1 = document.createElement("td");
+    var img = document.createElement("img");
+    img.setAttribute("src", image_url);
+    td1.append(img);
+    var td2 = document.createElement("td");
+    td2.textContent = name;
+    var td3 = document.createElement("td");
+    td3.textContent = price;
 
-  var td5 = document.createElement("td");
-  td5.textContent = rupee + MRP;
+    var td4 = document.createElement("td");
+    var inc = document.createElement("button");
+    inc.setAttribute("id", "inc");
+    inc.textContent = "+";
+    inc.addEventListener("click", function () {
+      qty.innerText = Number(qty.innerText) + 1;
+      total.innerText = Number(qty.innerText) * price;
+      sum = eval(sum + Number(price));
+      tag.innerText = sum;
+      checkOutTotal = JSON.parse(localStorage.getItem("total")) || 0;
+      checkOutTotal = sum;
+      localStorage.setItem("total", JSON.stringify(checkOutTotal));
+    });
 
-  row.append(td1, td2, td3, td4, td5);
-  var tbody = document.querySelector("tbody");
-  tbody.append(row);
-}
-console.log(sum);
-var tag = (document.getElementById("totalAmt").innerHTML =
-  `<span>Subtotal : ₹ </span>` + sum);
+    var dec = document.createElement("button");
+    dec.setAttribute("id", "dec");
+    dec.textContent = "-";
+    dec.addEventListener("click", function () {
+      var val = Number(qty.innerText);
+      if (val > 1) {
+        qty.innerText = Number(qty.innerText) - 1;
+        total.innerText = Number(total.innerText) - price;
+        sum = eval(sum - Number(price));
+        tag.innerText = sum;
+        checkOutTotal = JSON.parse(localStorage.getItem("total")) || 0;
+        checkOutTotal = sum;
+        localStorage.setItem("total", JSON.stringify(checkOutTotal));
+      }
+    });
+
+    var qty = document.createElement("p");
+    qty.id = "qty" + (num + 1);
+    qty.style.margin = "0 10px";
+    qty.textContent = "1";
+    console.log(qty.textContent);
+    td4.append(inc, qty, dec);
+    td4.style.display = "flex";
+    td4.style.padding = "72px 0px";
+
+    //var n = document.getElementById("sel").value;
+    var td5 = document.createElement("td");
+    var total = document.createElement("p");
+    total.id = "total" + (num + 1);
+    total.textContent = price;
+    td5.append(total);
+    // td5.textContent = Number(price) * selectTag.value;
+
+    row.append(td1, td2, td3, td4, td5);
+    var tbody = document.querySelector("tbody");
+    tbody.append(row);
+    sum = eval(sum + Number(price));
+    checkOutTotal = sum;
+
+    var obj = {
+      name: name,
+      image: image_url,
+      price: price,
+      qty: qty.textContent,
+      total: total.textContent,
+    }
+    localStorage.setItem("total", JSON.stringify(checkOutTotal));
+  }
+  console.log(sum);
+  var tag = document.getElementById("totalAmt");
+  tag.innerHTML = `<span>Subtotal : ₹ </span>` + sum;
 
 </script>

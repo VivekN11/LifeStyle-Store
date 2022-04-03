@@ -1,131 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In / Sign Up</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/apple-touch-icon-152x152.png"
+    />
     <style>
-         *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        
-        .popup{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            opacity: 0;
-            transform: translate(-50%,-50%) scale(1.25);
-            width: 700px;
-            padding: 40px 60px;
-            background-color: white;
-            padding: 50px 80px 80px 80px;
-            transition:top 0ms ease-in-out 200ms,
-                       opacity 200ms ease-in-out 0ms,
-                       transform 200ms ease-in-out 0ms;
-        }
-        .active{
-            top: 50%;
-            opacity: 1;
-            transform: translate(-50%,-50%) scale(1);
-            transition:top 0ms ease-in-out 200ms,
-                       opacity 200ms ease-in-out 0ms,
-                       transform 200ms ease-in-out 0ms,
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
 
-        }
-        .close-btn{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            font-size: 30px;
-        }
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            font-weight: 400;
-            margin-bottom: 15px;
-        }
-        p{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
-            color: rgb(148, 146, 146);
-            margin-bottom: 15px;
-            margin-top: 15px;
-            margin-left: 0px;
-        }
-        label{
-            font-size: 18px;
-            margin-top: 10px;
-        }
-        input{
-            margin-top: 10px;
-            display: block;
-            width: 98%;
-            padding: 12px;
-            outline: none;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-        a{
-            color: #faa619;
-        }
-        .B{
-            background-color: #faa619;
-            width: 130px;
-            height: 40px;
-            outline: none;
-            border: 1px solid #faa619;
-            color: white;
-            font-weight: bold;
-            margin-top: 15px;
-            margin-left: 70%;
-            
-        }
-        img{
-            width: 100%;
-            height: 90%;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+      .popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 700px;
+        padding: 40px 60px;
+        background-color: white;
+        padding: 50px 80px 80px 80px;
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+          transform 200ms ease-in-out 0ms;
+      }
+      .active {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+          transform 200ms ease-in-out 0ms;
+      }
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 30px;
+      }
+      .form h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      .form p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: rgb(148, 146, 146);
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: 0px;
+      }
+      .form label {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .form input {
+        margin-top: 10px;
+        display: block;
+        width: 98%;
+        padding: 12px;
+        outline: none;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+      }
+      .form > p > a {
+        color: #faa619;
+      }
+      .B {
+        background-color: #faa619;
+        width: 130px;
+        height: 40px;
+        outline: none;
+        border: 1px solid #faa619;
+        color: white;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 70%;
+      }
+      .form > button > a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
+      .form > button {
+        margin-top: 15px;
+        margin-right: 20%;
+        margin-left: 5%;
+      }
+
+      .centre {
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="centre">
-        <button id="show-login">Signup</button>
+      <h1>Continue to Sign Up / Sign In</h1>
+      <button id="show-login">Signup</button>
     </div>
-    <img src="https://wallpapercave.com/wp/wp2578970.png"/>
-        <div class="popup">
-            <div class="close-btn">
-                &times;
-            </div>
-            <div class="form">
-                <h1>Sign up or Sign in</h1>
-                <p>Enjoy the convenience of a single account across all participating brands</p>
-                <label>Mobile Number</label>
-                <input type="number" placeholder="Enter your mobile number">
-                <p>By creating your account you agree to our<a>Terms and Conditions</a></p>
-                <hr>
-                <button class="B"><a href="otp.html">CONTINUE</a></button>
-            </div>
-        </div>
-</body>
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h1>Sign up or Sign in</h1>
+        <p>
+          Enjoy the convenience of a single account across all participating
+          brands
+        </p>
+        <label>Mobile Number</label>
+        <input type="number" placeholder="Enter your mobile number" />
+        <p>
+          By creating your account you agree to our<a>Terms and Conditions</a>
+        </p>
+        <hr />
+        <button class="B"><a href="otp.html">CONTINUE</a></button>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script>
-    document.querySelector("#show-login").addEventListener("click",function(){
-        document.querySelector(".popup").classList.add("active");
-    });
+  document.querySelector("#show-login").addEventListener("click", function () {
+    document.querySelector(".popup").classList.add("active");
+  });
 
-    document.querySelector(".close-btn").addEventListener("click",function(){
-        document.querySelector(".popup").classList.remove("active");
-    });
+  document.querySelector(".close-btn").addEventListener("click", function () {
+    document.querySelector(".popup").classList.remove("active");
+  });
 </script>
