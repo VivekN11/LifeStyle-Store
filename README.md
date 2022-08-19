@@ -36,7 +36,7 @@ This is the landing page of clone LifeStore we tried to make an exact replica of
 
 <br>
 
-![Sigin In]([./ScreenShots/Register.png](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Nav%20bar.png))
+![Sigin In]((https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Nav%20bar.png))
 
 <br>
 
@@ -52,7 +52,7 @@ We wanted to make the sign-in sign-up page work exactly the same as the original
 
 <br>
 
-![Product Home]([./ScreenShots/Products%20Home.png](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Nav%20bar.png))
+![Product Home]((https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Nav%20bar.png))
 
 This is how the Landing page of any particular product looks here we use Shop & Bag landing page for a demonstration. You can look at snap there is again we have many product images and users can click on any product as per their need and later redirected to the list of products page where multiple types of products available of any particular category
 
