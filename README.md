@@ -20,7 +20,7 @@ While surfing the website we find that the website is very user friendly and ver
 
 ![HomePage](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Home.png)
 
-![Nav bar](./ScreenShots/Nav%20bar.png)
+![Nav bar](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Nav%20bar.png)
 
 <br>
 
@@ -60,7 +60,7 @@ This is how the Landing page of any particular product looks here we use Shop & 
 
 ## Products Page…
 
-![Products](./ScreenShots/product.png)
+![Products](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/product.png)
 So this is the product page of the website where the user can select any product from the list of multiple products available on the page. Initially, the User can only look at the Image, Price And Name of the products but when the user hovers over the image or price of the product more hidden options get visible where the user can select the colour of the product and size of the product and after selecting this all thing user can click on add to basket button and the product will get added to the basket. And if the user clicks on the image of the product he will redirect to the product detail page.
 
 <br>
@@ -79,7 +79,7 @@ So this is the product page of the website where the user can select any product
 
 <br>
 
-![Basket](./ScreenShots/Checkout.png)
+![Basket](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Checkout.png)
 
 Now we have the basket page and all the products which are added to the cart by the user will show here. on this page tried to put everything together as the total product added, the total amount of all the products also users have the option to increase or decrease the quantity of the product, by changing the quantity of product the total amount of individual product and the amount of total item in the cart is also got change. Also from here the user can place the order and buy the +product by clicking on the checkout page.
 
@@ -93,11 +93,11 @@ Now we have the basket page and all the products which are added to the cart by 
 
 <br>
 
-![Payment](./ScreenShots/Payment%20page.png)
+![Payment](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Payment%20page.png)
 
 <br>
 
-![Post Payment](./ScreenShots/Post%20payment.png)
+![Post Payment](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Post%20payment.png)
 
 <br>
 
