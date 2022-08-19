@@ -109,7 +109,7 @@ When User decides to buy any product they simply need to click on Proceed to Che
 
 <br>
 
-### Deploy Link -> [`Check here`](https://g-lalithsai.github.io/LifeStyle-Store/)
+### Deploy Link -> [`Check here`](https://vivekn11.github.io/LifeStyle-Store/)
 
 <br>
 
