@@ -18,7 +18,7 @@ While surfing the website we find that the website is very user friendly and ver
 
 <br>
 
-![HomePage](./ScreenShots/Home.png)
+![HomePage](https://github.com/G-LalithSai/LifeStyle-Store/raw/master/ScreenShots/Home.png)
 
 ![Nav bar](./ScreenShots/Nav%20bar.png)
 
